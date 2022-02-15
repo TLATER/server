@@ -120,6 +120,12 @@
 } ?> />
 			<label for="enforceLinkPassword"><?php p($l->t('Enforce password protection'));?></label><br/>
 
+			<p id="selectPasswordsExcludedGroups" class="indent <?php if (!$_['enforceLinkPassword']) { p('hidden'); } ?>">
+				<input name="shareapi_enforce_links_password_excluded_groups" id="passwordsExcludedGroups" value="<?php p($_['allowLinksExcludeGroups']) ?>" style="width: 400px" class="noJSAutoUpdate"/>
+			</p>
+
+			<input type="checkbox" name="shareapi_default_expire_date" id="shareapiDefaultExpireDate" class="checkbox" value="1" <?php if ($_['shareDefaultExpireDateSet'] === 'yes') { print_unescaped('checked="checked"'); } ?> />
+
 			<input type="checkbox" name="shareapi_default_expire_date" id="shareapiDefaultExpireDate" class="checkbox"
 				   value="1" <?php if ($_['shareDefaultExpireDateSet'] === 'yes') {
 	print_unescaped('checked="checked"');
