@@ -94,6 +94,10 @@ window.addEventListener('DOMContentLoaded', function(){
 		$("#setDefaultRemoteExpireDate").toggleClass('hidden', !this.checked);
 	});
 
+	$('#enforceLinkPassword').change(function() {
+		$("#selectPasswordsExcludedGroups").toggleClass('hidden', !this.checked);
+	});
+
 	$('#publicShareDisclaimer').change(function() {
 		$("#publicShareDisclaimerText").toggleClass('hidden', !this.checked);
 		if(!this.checked) {
