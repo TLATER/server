@@ -1792,9 +1792,11 @@ class Manager implements IManager {
 		if ($excludedGroups !== '' && $checkGroupMembership) {
 			$excludedGroups = json_decode($excludedGroups);
 			$user = $this->userSession->getUser();
-			$userGroups = $this->groupManager->getUserGroupIds($user);
-			if ((bool)array_intersect($excludedGroups, $userGroups)) {
-				return false;
+			if ($user) {
+				$userGroups = $this->groupManager->getUserGroupIds($user);
+				if ((bool)array_intersect($excludedGroups, $userGroups)) {
+					return false;
+				}
 			}
 		}
 		return $this->config->getAppValue('core', 'shareapi_enforce_links_password', 'no') === 'yes';
