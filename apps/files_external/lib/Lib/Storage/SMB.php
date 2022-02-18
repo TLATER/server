@@ -85,7 +85,7 @@ class SMB extends Common implements INotifyStorage {
 	protected $root;
 
 	/**
-	 * @var \Icewind\SMB\IFileInfo[]
+	 * @var IFileInfo[]
 	 */
 	protected $statCache;
 
@@ -180,7 +180,7 @@ class SMB extends Common implements INotifyStorage {
 
 	/**
 	 * @param string $path
-	 * @return \Icewind\SMB\IFileInfo
+	 * @return IFileInfo
 	 * @throws StorageAuthException
 	 */
 	protected function getFileInfo($path) {
@@ -231,7 +231,7 @@ class SMB extends Common implements INotifyStorage {
 
 	/**
 	 * @param string $path
-	 * @return \Icewind\SMB\IFileInfo[]
+	 * @return \Generator<IFileInfo>
 	 * @throws StorageNotAvailableException
 	 */
 	protected function getFolderContents($path): iterable {
@@ -284,7 +284,7 @@ class SMB extends Common implements INotifyStorage {
 	}
 
 	/**
-	 * @param \Icewind\SMB\IFileInfo $info
+	 * @param IFileInfo $info
 	 * @return array
 	 */
 	protected function formatInfo($info) {
@@ -616,7 +616,7 @@ class SMB extends Common implements INotifyStorage {
 			return false;
 		}
 		$names = array_map(function ($info) {
-			/** @var \Icewind\SMB\IFileInfo $info */
+			/** @var IFileInfo $info */
 			return $info->getName();
 		}, iterator_to_array($files));
 		return IteratorDirectory::wrap($names);
