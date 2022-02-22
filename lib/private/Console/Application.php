@@ -70,10 +70,6 @@ class Application {
 		$this->request = $request;
 		$this->logger = $logger;
 		$this->memoryInfo = $memoryInfo;
-		if ($config->getSystemValueBool('installed')) {
-			/* Build core application to make sure that listeners are registered */
-			\OC::$server->query(CoreApplication::class);
-		}
 	}
 
 	/**
