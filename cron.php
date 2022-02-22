@@ -51,6 +51,9 @@ try {
 		exit;
 	}
 
+	/* Build core application to make sure that listeners are registered */
+	\OC::$server->query(\OC\Core\Application::class);
+
 	// load all apps to get all api routes properly setup
 	OC_App::loadApps();
 
