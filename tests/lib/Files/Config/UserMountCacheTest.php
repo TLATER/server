@@ -10,6 +10,7 @@ namespace Test\Files\Config;
 
 use OC\DB\QueryBuilder\Literal;
 use OC\Files\Mount\MountPoint;
+use OC\Files\SetupManager;
 use OC\Files\Storage\Storage;
 use OC\Log;
 use OC\User\Manager;
@@ -45,6 +46,8 @@ class UserMountCacheTest extends TestCase {
 	private $fileIds = [];
 
 	protected function setUp(): void {
+		parent::setUp();
+
 		$this->fileIds = [];
 		$this->connection = \OC::$server->getDatabaseConnection();
 		$config = $this->getMockBuilder(IConfig::class)
