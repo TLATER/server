@@ -55,12 +55,12 @@
 			</p>
 		</template>
 		<p>
-			<button v-if="dirty"
-				class="button primary"
+			<Button v-if="dirty"
+				type="primary"
 				:disabled="loading"
 				@click="saveChanges">
 				{{ t('settings', 'Save changes') }}
-			</button>
+			</Button>
 		</p>
 	</div>
 </template>
@@ -70,11 +70,13 @@ import axios from '@nextcloud/axios'
 import Multiselect from '@nextcloud/vue/dist/Components/Multiselect'
 import _ from 'lodash'
 import { generateUrl, generateOcsUrl } from '@nextcloud/router'
+import Button from '@nextcloud/vue/dist/Components/Button'
 
 export default {
 	name: 'AdminTwoFactor',
 	components: {
 		Multiselect,
+		Button,
 	},
 	data() {
 		return {
