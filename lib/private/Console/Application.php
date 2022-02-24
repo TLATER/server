@@ -30,7 +30,6 @@
  */
 namespace OC\Console;
 
-use OC\Core\Application as CoreApplication;
 use OC\MemoryInfo;
 use OC\NeedsUpdateException;
 use OC_App;
