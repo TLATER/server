@@ -424,13 +424,13 @@
 							type: OC.SetupChecks.MESSAGE_TYPE_INFO
 						})
 					}
-					if (data.imageMagickLacksSVGSupport) {
+					if (data.imageMagickLoaded) {
 						messages.push({
 							msg: t(
 								'core',
-								'Module php-imagick in this instance has no SVG support. For better compatibility it is recommended to install it.'
-							),
-							type: OC.SetupChecks.MESSAGE_TYPE_INFO
+								'Imagemagick is in use for document preview. This is not recommended out of security concerns, see the document preview documentation here:'
+							) + " <a href='https://docs.nextcloud.com/server/stable/admin_manual/configuration_files/previews_configuration.html'>https://docs.nextcloud.com/server/stable/admin_manual/configuration_files/previews_configuration.html</a>",
+							type: OC.SetupChecks.MESSAGE_TYPE_WARNING
 						})
 					}
 					if (data.pendingBigIntConversionColumns.length > 0) {

@@ -815,8 +815,8 @@ Raw output
 		return false;
 	}
 
-	protected function imageMagickLacksSVGSupport(): bool {
-		return extension_loaded('imagick') && count(\Imagick::queryFormats('SVG')) === 0;
+	protected function imageMagickLoaded(): bool {
+		return extension_loaded('imagick');
 	}
 
 	/**

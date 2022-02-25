@@ -64,7 +64,7 @@ OC.L10N.register(
     "Your PHP does not have FreeType support, resulting in breakage of profile pictures and the settings interface." : "PHP ของคุณไม่รองรับ FreeType ส่งผลให้รูปภาพโปรไฟล์และส่วนติดต่อการตั้งค่าไม่สมบูรณ์",
     "Missing index \"{indexName}\" in table \"{tableName}\"." : "ขาดดัชนี \"{indexName}\" ในตาราง \"{tableName}\"",
     "Missing primary key on table \"{tableName}\"." : "ขาดคีย์หลักบนตาราง \"{tableName}\"",
-    "Module php-imagick in this instance has no SVG support. For better compatibility it is recommended to install it." : "โมดูล php-imagick ในเซิร์ฟเวอร์นี้ไม่รองรับ SVG แนะนำให้ติดตั้งเพื่อความเข้ากันได้ที่ดีขึ้น",
+    "Imagemagick is in use for document preview. This is not recommended out of security concerns, see the document preview documentation here:" : "โมดูล php-imagick ในเซิร์ฟเวอร์นี้ไม่รองรับ SVG แนะนำให้ติดตั้งเพื่อความเข้ากันได้ที่ดีขึ้น",
     "SQLite is currently being used as the backend database. For larger installations we recommend that you switch to a different database backend." : "ขณะนี้ใช้ SQLite เป็นฐานข้อมูล สำหรับการติดตั้งขนาดใหญ่เราแนะนำให้สลับไปยังแบ็กเอนด์ฐานข้อมูลแบบอื่น",
     "This is particularly recommended when using the desktop client for file synchronisation." : "เราแนะนำเมื่อใช้ไคลเอ็นต์เดสก์ท็อปสำหรับการประสานข้อมูลไฟล์",
     "Error occurred while checking server setup" : "เกิดข้อผิดพลาดขณะตรวจสอบการติดตั้งเซิร์ฟเวอร์",

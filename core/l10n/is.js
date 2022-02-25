@@ -62,7 +62,7 @@ OC.L10N.register(
     "Missing primary key on table \"{tableName}\"." : "Vantar aðalvísinn í töflunni \"{tableName}\".",
     "Missing optional column \"{columnName}\" in table \"{tableName}\"." : "Vantar valkvæða dálkinn \"{columnName}\" í töflunni \"{tableName}\".",
     "This instance is missing some recommended PHP modules. For improved performance and better compatibility it is highly recommended to install them." : "Í þetta kerfistilvik vantar ýmsar PHP-einingar sem mælt er með. Til að bæta afköst og betri samhæfni er mælt eindregið með að setja þær upp.",
-    "Module php-imagick in this instance has no SVG support. For better compatibility it is recommended to install it." : "Í kerfiseininguna php-imagick vantar stuðning við SVG. Til að bæta afköst og betri samhæfni er mælt eindregið með að setja hana upp.",
+    "Imagemagick is in use for document preview. This is not recommended out of security concerns, see the document preview documentation here:" : "Í kerfiseininguna php-imagick vantar stuðning við SVG. Til að bæta afköst og betri samhæfni er mælt eindregið með að setja hana upp.",
     "SQLite is currently being used as the backend database. For larger installations we recommend that you switch to a different database backend." : "Núna er stuðst við SQLite sem bakenda fyrir gagnagrunn. Fyrir stærri uppsetningar mælum við með að skipta yfir í annan gagnagrunnsbakenda.",
     "This is particularly recommended when using the desktop client for file synchronisation." : "Mælt er sérstaklega með þessu þegar skjáborðsforritið er notað til að samstilla skrár.",
     "The PHP memory limit is below the recommended value of 512MB." : "Minnismörk PHP eru lægri en gildið sem mælt er með; 512MB.",

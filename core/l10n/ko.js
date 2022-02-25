@@ -83,7 +83,7 @@ OC.L10N.register(
     "Missing primary key on table \"{tableName}\"." : "\"{tableName}\" 테이블에 Primary key가 없습니다.",
     "Missing optional column \"{columnName}\" in table \"{tableName}\"." : "테이블 \"{tableName}\"에서 \"{columnName}\" 컬럼이 빠졌습니다.",
     "This instance is missing some recommended PHP modules. For improved performance and better compatibility it is highly recommended to install them." : "이 인스턴스에 추천하는 PHP 모듈 중 일부가 존재하지 않습니다. 성능 향상과 호환성을 위하여 PHP 모듈을 설치하는 것을 추천합니다.",
-    "Module php-imagick in this instance has no SVG support. For better compatibility it is recommended to install it." : "이 인스턴스의 모듈 php-imagick에 SVG 지원이 없습니다. 더 나은 호환성을 위해 설치를 권장합니다.",
+    "Imagemagick is in use for document preview. This is not recommended out of security concerns, see the document preview documentation here:" : "이 인스턴스의 모듈 php-imagick에 SVG 지원이 없습니다. 더 나은 호환성을 위해 설치를 권장합니다.",
     "SQLite is currently being used as the backend database. For larger installations we recommend that you switch to a different database backend." : "현재 백엔드 데이터베이스로 SQLite를 사용하고 있습니다. 대규모의 파일을 관리하려고 한다면 다른 데이터베이스 백엔드로 전환할 것을 권장합니다.",
     "This is particularly recommended when using the desktop client for file synchronisation." : "특히 파일 동기화를 위해 데스크톱 클라이언트를 사용할 예정인 경우 권장됩니다.",
     "To migrate to another database use the command line tool: 'occ db:convert-type', or see the {linkstart}documentation ↗{linkend}." : "다른 데이터 베이스로 마이그레션하기 위해서 다음 명령을 사용하세요: ''occ db:convert-type', 또는 다음 {linkstart}문서를 참조하세요 ↗{linkend}.",

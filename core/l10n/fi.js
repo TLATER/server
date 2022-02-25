@@ -74,7 +74,7 @@ OC.L10N.register(
     "Missing index \"{indexName}\" in table \"{tableName}\"." : "Puuttuva indeksi \"{indexName}\" taulussa \"{tableName}\".",
     "Missing primary key on table \"{tableName}\"." : "Primary key puuttuu taulusta \"{tableName}\".",
     "Missing optional column \"{columnName}\" in table \"{tableName}\"." : "Valinnainen sarake \"{columnName}\" puuttuu taulusta \"{tableName}\".",
-    "Module php-imagick in this instance has no SVG support. For better compatibility it is recommended to install it." : "Palvelimen php-imagick-moduulissa ei ole SVG-tukea. Parempaa yhteensopivuutta varten sen asentaminen on suositeltua.",
+    "Imagemagick is in use for document preview. This is not recommended out of security concerns, see the document preview documentation here:" : "Palvelimen php-imagick-moduulissa ei ole SVG-tukea. Parempaa yhteensopivuutta varten sen asentaminen on suositeltua.",
     "SQLite is currently being used as the backend database. For larger installations we recommend that you switch to a different database backend." : "SQLite on parhaillaan käytössä tietokantaratkaisuna. Suuria asennuksia varten suosittelemme vaihtamaan toiseen tietokantaratkaisuun.",
     "This is particularly recommended when using the desktop client for file synchronisation." : "Tämä on suositeltavaa erityisesti silloin, kun työpöytäsovellusta käytetään tiedostojen synkronointiin.",
     "To migrate to another database use the command line tool: 'occ db:convert-type', or see the {linkstart}documentation ↗{linkend}." : "Siirtyäksesi toiseen tietokantaan, käytä komentorivityökalua: 'occ db:convert-type', tai lue {linkstart}dokumentaatio ↗{linkend}.",
